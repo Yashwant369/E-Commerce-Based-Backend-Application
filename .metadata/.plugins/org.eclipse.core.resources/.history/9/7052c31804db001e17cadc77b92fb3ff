@@ -1,0 +1,12 @@
+package com.yashwant.user_service.service.impl;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl 
+{
+	@Autowired
+	private UserRepo userRepo;
+	
+
+}

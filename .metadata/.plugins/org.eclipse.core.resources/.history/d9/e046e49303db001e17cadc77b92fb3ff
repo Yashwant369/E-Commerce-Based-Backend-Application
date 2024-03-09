@@ -1,0 +1,5 @@
+package com.yashwant.user_service.service;
+
+public interface UserService {
+
+}

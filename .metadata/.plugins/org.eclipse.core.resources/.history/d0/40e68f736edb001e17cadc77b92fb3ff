@@ -1,0 +1,15 @@
+package com.yashwant.category_service.entity;
+
+@Entity
+@Data
+public class Category 
+{
+	@Id
+	private String categoryId;
+	private String categoryTitle;
+	private String categoryDescription;
+	
+	@Transient
+	List<Product>p
+
+}

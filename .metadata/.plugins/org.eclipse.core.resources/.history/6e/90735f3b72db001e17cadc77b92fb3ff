@@ -1,0 +1,5 @@
+package com.yashwant.product_service.entity;
+
+public class Category {
+
+}

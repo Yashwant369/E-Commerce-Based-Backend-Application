@@ -1,0 +1,6 @@
+package com.yashwant.product_service.repository;
+
+public interface ProductRepo extends JpaRepository<>
+{
+
+}

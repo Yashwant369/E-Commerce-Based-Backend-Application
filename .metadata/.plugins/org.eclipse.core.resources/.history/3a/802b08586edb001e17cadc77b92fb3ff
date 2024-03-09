@@ -1,0 +1,7 @@
+package com.yashwant.category_service.entity;
+
+@Entity
+@Data
+public class Category {
+
+}

@@ -1,0 +1,7 @@
+package com.yashwant.product_service.controller;
+
+@RestController
+@RequestMapping("/product")
+public class ProductController {
+
+}

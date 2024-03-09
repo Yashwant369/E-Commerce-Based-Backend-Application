@@ -1,0 +1,12 @@
+package com.yashwant.product_service.entity;
+
+@Entity
+@Data
+public class Product 
+{
+	@Id
+	private String productId;
+	private String productName
+	
+
+}

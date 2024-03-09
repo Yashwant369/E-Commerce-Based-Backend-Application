@@ -1,0 +1,15 @@
+package com.yashwant.category_service.configuration;
+
+import org.springframework.web.client.RestTemplate;
+
+@Configuration
+public class MyConfiguration 
+{
+	
+	@Bean
+	public RestTemplate getTemplate()
+	{
+		return new RestTemplate();
+	}
+
+}

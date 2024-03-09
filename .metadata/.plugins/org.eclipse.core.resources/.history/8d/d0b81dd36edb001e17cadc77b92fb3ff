@@ -1,0 +1,8 @@
+package com.yashwant.category_service.repository;
+
+
+public interface CategoryRepo extends JpaRepository<Category,String>
+{
+	
+
+}

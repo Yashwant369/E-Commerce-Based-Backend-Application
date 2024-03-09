@@ -1,0 +1,16 @@
+package com.yashwant.user_service.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Data
+public class User 
+{
+	private String userId;
+	private String userName;
+	private String userGender;
+	private String userEmail;
+	private String password;
+	private String userImage;
+
+}

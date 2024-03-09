@@ -1,0 +1,13 @@
+package com.yashwant.category_service.entity;
+
+import lombok.Data;
+
+
+public class Product 
+{
+	private String productId;
+	private String productName;
+	private String productCategory;
+	
+
+}

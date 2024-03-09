@@ -1,0 +1,17 @@
+package com.yashwant.product_service.entity;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Entity
+@Data
+public class Product 
+{
+	@Id
+	private String productId;
+	private String productName;
+	@Transient
+	private Category category;
+	
+
+}

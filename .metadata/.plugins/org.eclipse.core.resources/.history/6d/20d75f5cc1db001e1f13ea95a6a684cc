@@ -1,0 +1,6 @@
+package com.yashwant.category_service.configuration;
+
+@Configuration
+public class MyConfiguration {
+
+}

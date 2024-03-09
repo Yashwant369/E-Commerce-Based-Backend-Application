@@ -1,0 +1,14 @@
+package com.yashwant.user_service.entity;
+
+@Entity
+@Data
+public class User 
+{
+	private String userId;
+	private String userName;
+	private String userGender;
+	private String userEmail;
+	private String password;
+	private String userImage;
+
+}

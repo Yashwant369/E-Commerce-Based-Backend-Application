@@ -1,0 +1,8 @@
+package com.yashwant.category_service.service;
+
+
+public interface CategoryService 
+{
+	public Category saveCategory()
+
+}

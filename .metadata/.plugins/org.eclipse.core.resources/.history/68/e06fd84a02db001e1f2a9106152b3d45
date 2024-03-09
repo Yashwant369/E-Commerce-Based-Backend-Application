@@ -1,0 +1,6 @@
+package com.yashwant.user_service.entity;
+
+@
+public class User {
+
+}

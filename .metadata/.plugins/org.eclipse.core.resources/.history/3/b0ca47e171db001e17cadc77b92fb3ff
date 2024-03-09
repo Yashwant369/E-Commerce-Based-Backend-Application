@@ -1,0 +1,13 @@
+package com.yashwant.product_service.service.impl;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductServiceImpl 
+{
+	@Autowired
+	private ProductRepo productRepo;
+	
+	
+
+}
