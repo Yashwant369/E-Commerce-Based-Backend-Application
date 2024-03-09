@@ -1,0 +1,10 @@
+package com.yashwant.user_service.configurations;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MyConfiguration {
+	
+	public ModelMapper 
+
+}

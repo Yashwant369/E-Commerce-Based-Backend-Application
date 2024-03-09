@@ -1,0 +1,11 @@
+package com.yashwant.user_service.util;
+
+import lombok.Data;
+
+@Data
+public class ApiResponse {
+	
+	private String message;
+	private B
+
+}

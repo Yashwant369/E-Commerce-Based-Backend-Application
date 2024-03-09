@@ -1,0 +1,6 @@
+package com.yashwant.user_service.dtos;
+
+
+public class UserDto {
+
+}

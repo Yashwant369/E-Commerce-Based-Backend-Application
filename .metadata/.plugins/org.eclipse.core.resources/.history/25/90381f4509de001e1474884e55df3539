@@ -1,0 +1,10 @@
+package com.yashwant.user_service.service;
+
+import com.yashwant.user_service.entity.User;
+
+public interface UserService 
+{
+	public UserDto addUser(User user);
+	public UserDto getUser(String userId);
+
+}
