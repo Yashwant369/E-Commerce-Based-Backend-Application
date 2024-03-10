@@ -1,0 +1,6 @@
+package com.yashwant.category_service.util;
+
+@Data
+public class ApiResponse {
+
+}

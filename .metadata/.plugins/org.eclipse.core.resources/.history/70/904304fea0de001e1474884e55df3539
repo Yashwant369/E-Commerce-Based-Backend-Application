@@ -1,0 +1,6 @@
+package com.yashwant.category_service.dtos;
+
+@Data
+public class CategoryDto {
+
+}

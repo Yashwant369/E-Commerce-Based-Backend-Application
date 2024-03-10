@@ -74,6 +74,11 @@
     <groupId>io.github.resilience4j</groupId>
     <artifactId>resilience4j-spring-boot3</artifactId> 
 </dependency>
+<dependency>
+  <groupId>org.modelmapper</groupId>
+  <artifactId>modelmapper</artifactId>
+  <version>3.0.0</version>
+</dependency>
 	</dependencies>
 	
 	  <dependencyManagement>

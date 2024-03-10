@@ -1,0 +1,13 @@
+package com.yashwant.category_service.service;
+
+import com.yashwant.category_service.dtos.CategoryDto;
+import com.yashwant.category_service.entity.Category;
+
+public interface CategoryService 
+{
+	public CategoryDto saveCategory(Category category);
+	public CategoryDto getCategory(String categoryId);
+	public List<CategoryDto>getAllCategory();
+	
+
+}

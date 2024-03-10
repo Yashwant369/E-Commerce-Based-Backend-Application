@@ -6,6 +6,8 @@ import com.yashwant.category_service.entity.Category;
 
 public interface CategoryRepo extends JpaRepository<Category,String>
 {
+
+	Category findByCategoryTitle(String categoryTitle);
 	
 
 }

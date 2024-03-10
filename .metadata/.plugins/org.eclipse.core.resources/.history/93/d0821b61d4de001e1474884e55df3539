@@ -1,0 +1,5 @@
+package com.yashwant.product_service.dtos;
+
+public class ProductDto {
+
+}

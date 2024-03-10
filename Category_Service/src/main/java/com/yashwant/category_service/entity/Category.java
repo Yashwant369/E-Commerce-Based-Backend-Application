@@ -17,7 +17,6 @@ public class Category
 	private String categoryTitle;
 	private String categoryDescription;
 	
-	@Transient
-	private List<Product>products = new ArrayList<>();
+	
 
 }

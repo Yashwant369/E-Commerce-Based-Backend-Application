@@ -1,0 +1,65 @@
+package com.yashwant.product_service.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.yashwant.product_service.dtos.ProductDto;
+import com.yashwant.product_service.service.ProductService;
+import com.yashwant.product_service.util.ApiResponse;
+
+@Service
+public class ProductServiceImpl implements ProductService
+{
+
+	@Override
+	public ProductDto addProduct(ProductDto productDto) {
+		// TODO Auto-generated method stub
+		String p
+		return null;
+	}
+
+	@Override
+	public ProductDto getProduct(String productId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ProductDto> getAllProduct() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ProductDto updateProduct(String productId, ProductDto productDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ApiResponse deleteProduct(String productId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ProductDto getByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ProductDto> getByPrefixName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ProductDto> getByLive(boolean live) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

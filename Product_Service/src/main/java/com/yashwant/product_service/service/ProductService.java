@@ -1,10 +1,20 @@
 package com.yashwant.product_service.service;
 
-import com.yashwant.product_service.entity.Product;
+import java.util.List;
+
+import com.yashwant.product_service.dtos.ProductDto;
+import com.yashwant.product_service.util.ApiResponse;
 
 public interface ProductService {
 	
-	public Product addProduct(Product product);
-	public Product getProduct(String productId);
+	public ProductDto addProduct(ProductDto productDto);
+	public ProductDto getProduct(String productId);
+	public List<ProductDto>getAllProduct();
+	public ProductDto updateProduct(String productId, ProductDto productDto);
+	public ApiResponse deleteProduct(String productId);
+	public ProductDto getByName(String name);
+	public List<ProductDto>getByPrefixName(String name);
+	public List<ProductDto>getByLive(boolean live);
+	
 
 }

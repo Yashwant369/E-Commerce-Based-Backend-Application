@@ -1,49 +1,68 @@
 package com.yashwant.category_service.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yashwant.category_service.entity.Category;
+import com.yashwant.category_service.dtos.CategoryDto;
 import com.yashwant.category_service.service.impl.CategoryServiceImpl;
-
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import com.yashwant.category_service.util.ApiResponse;
 
 @RestController
 @RequestMapping("/category")
 public class CategoryController 
 {
+	
 	@Autowired
-	private CategoryServiceImpl  categoryService;
+	private CategoryServiceImpl categoryService;
+	
 	
 	@PostMapping("/addCategory")
-	public Category addCategory(@RequestBody Category category)
+	public ResponseEntity<CategoryDto>saveCategory(@RequestBody CategoryDto categoryDto)
 	{
-		return categoryService.saveCategory(category);
-		
+		CategoryDto category = categoryService.saveCategory(categoryDto);
+		return new ResponseEntity<>(category, HttpStatus.OK);
+	}	
+	@PutMapping("/updateCategory/{categoryId}")
+	public ResponseEntity<CategoryDto>updateCategory(@RequestBody CategoryDto categoryDto, @PathVariable String categoryId)
+	{
+		CategoryDto category = categoryService.updateCategory(categoryId, categoryDto);
+		return new ResponseEntity<>(category, HttpStatus.OK);
 	}
-	@GetMapping("/getCategory/{categoryId}")
-	@CircuitBreaker(name = "productServiceBreaker", fallbackMethod = "productServiceFallback")
-	@RateLimiter(name = "categoryRateLimiter", fallbackMethod = "productServiceFallback")
-	public Category getCategory(@PathVariable String categoryId)
+	@DeleteMapping("/deleteCategory/{categoryId}")
+	public ResponseEntity<ApiResponse>deleteCategory(@PathVariable String categoryId)
 	{
-		return categoryService.getCategory(categoryId);
+		ApiResponse response = categoryService.deleteCategory(categoryId);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+	@GetMapping("/getAllCategory")
+	public ResponseEntity<List<CategoryDto>>getAllCategory()
+	{
+		List<CategoryDto>list = categoryService.getAllCategory();
+		return new ResponseEntity<>(list, HttpStatus.OK);
+	}
+	@GetMapping("/getById/{categoryId}")
+	public ResponseEntity<CategoryDto>getCategory(@PathVariable String categoryId)
+	{
+		CategoryDto category = categoryService.getCategory(categoryId);
+		return new ResponseEntity<>(category, HttpStatus.OK);
+	}
+	@GetMapping("/getByName/{name}")
+	public ResponseEntity<CategoryDto>getByName(@PathVariable String name)
+	{
+		CategoryDto category = categoryService.getByName(name);
+		return new ResponseEntity<>(category,HttpStatus.OK);
 	}
 	
-	public Category productServiceFallback(String categoryId, Exception ex)
-	{
-		System.out.println(ex.getMessage());
-		Category cat = new Category();
-		cat.setCategoryId(categoryId);
-		cat.setCategoryTitle("Dummy title");
-		cat.setCategoryDescription("Dummy description");
-		cat.setProducts(null);
-		return cat;
-	}
 
 }

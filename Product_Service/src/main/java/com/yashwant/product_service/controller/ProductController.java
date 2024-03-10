@@ -18,16 +18,5 @@ public class ProductController
 	@Autowired
 	private ProductServiceImpl productService;
 	
-	@PostMapping("/addProduct")
-	public Product addproduct(@RequestBody Product product)
-	{
-		return productService.addProduct(product);
-	}
 	
-	@GetMapping("/getProduct/{productId}")
-	public Product getproduct(@PathVariable String productId)
-	{
-		return productService.getproduct(productId);
-	}
-
 }

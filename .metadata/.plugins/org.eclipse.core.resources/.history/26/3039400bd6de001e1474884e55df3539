@@ -1,0 +1,8 @@
+package com.yashwant.product_service.dtos;
+
+import lombok.Data;
+
+@Data
+public class ProductDto {
+
+}
