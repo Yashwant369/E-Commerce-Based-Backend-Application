@@ -1,0 +1,6 @@
+package com.yashwant.product_service.external;
+
+
+public interface CategoryService {
+
+}

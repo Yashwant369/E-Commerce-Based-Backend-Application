@@ -14,7 +14,10 @@ public interface ProductService {
 	public ApiResponse deleteProduct(String productId);
 	public ProductDto getByName(String name);
 	public List<ProductDto>getByPrefixName(String name);
-	public List<ProductDto>getByLive(boolean live);
+	public List<ProductDto>getByLive(String live);
+	public void deleteProductByCategory(String categoryId);
+	public void updateCategory(String productCategory,String categoryId);
+	public List<ProductDto>getproductByCategoryName(String productCategory);
 	
 
 }

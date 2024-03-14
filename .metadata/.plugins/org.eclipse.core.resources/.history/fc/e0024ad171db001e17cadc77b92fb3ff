@@ -1,6 +1,0 @@
-package com.yashwant.product_service.service.impl;
-
-@Service
-public class ProductServiceImpl {
-
-}

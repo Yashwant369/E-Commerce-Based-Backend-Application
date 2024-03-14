@@ -20,14 +20,9 @@ public class Product
 	private double productDiscountPrice;
 	private Integer productQuantity;
 	private Date productAddedDate;
-	private boolean productLive;
-	private boolean productStock;
+	private String productLive;
+	private String productCategory;
 	private String productImage;
-	
-	
-//	@Transient
-//	private Category category;
-	
-	
+	private String categoryId;
 
 }

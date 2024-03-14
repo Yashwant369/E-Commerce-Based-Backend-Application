@@ -11,12 +11,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.yashwant.category_service.dtos.CategoryDto;
+import com.yashwant.category_service.dtos.ProductDto;
 import com.yashwant.category_service.entity.Category;
-import com.yashwant.category_service.entity.Product;
 import com.yashwant.category_service.external.ProductService;
 import com.yashwant.category_service.repository.CategoryRepo;
 import com.yashwant.category_service.service.CategoryService;
 import com.yashwant.category_service.util.ApiResponse;
+import com.yashwant.category_service.util.CategoryResponse;
 
 @Service
 public class CategoryServiceImpl implements CategoryService
@@ -85,6 +86,7 @@ public class CategoryServiceImpl implements CategoryService
 		category.setCategoryDescription(categoryDto.getCategoryDescription());
 		category.setCategoryTitle(categoryDto.getCategoryTitle());
 		Category newCategory = categoryRepo.save(category);
+		productService.updateProductByCategoryName(newCategory.getCategoryTitle(), categoryId);
 		return mapper.map(newCategory, CategoryDto.class);
 	}
 
@@ -93,6 +95,7 @@ public class CategoryServiceImpl implements CategoryService
 		// TODO Auto-generated method stub
 		Category category = categoryRepo.findById(categoryId).get();
 		categoryRepo.delete(category);
+		productService.deleteProductByCategory(categoryId);
 		ApiResponse response = new ApiResponse();
 		response.setMessage("Category deleted for given id : " + categoryId);
 		response.setSuccess(true);
@@ -105,6 +108,20 @@ public class CategoryServiceImpl implements CategoryService
 		// TODO Auto-generated method stub
 		Category category = categoryRepo.findByCategoryTitle(categoryTitle);	
 		return mapper.map(category, CategoryDto.class);
+	}
+
+	@Override
+	public CategoryResponse getByCategoryName(String categoryName) {
+		// TODO Auto-generated method stub
+		Category category = categoryRepo.findByCategoryTitle(categoryName);	
+		CategoryResponse response = new CategoryResponse();
+		response.setCategoryId(category.getCategoryId());
+		response.setCategoryTitle(category.getCategoryTitle());
+		response.setCategoryDescription(category.getCategoryDescription());
+		
+		List<ProductDto>list = productService.getProductByCategoryName(categoryName);
+		response.setProducts(list);
+		return response;
 	}
 	
 

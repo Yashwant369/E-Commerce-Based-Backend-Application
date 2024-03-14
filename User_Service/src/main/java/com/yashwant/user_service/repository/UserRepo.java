@@ -10,10 +10,12 @@ import com.yashwant.user_service.entity.User;
 public interface UserRepo extends JpaRepository<User,String>
 {
 
-	User findByEmail(String email);
+	
     
 	@Query(value = "select * from user where user_name like :name%", nativeQuery = true)
 	List<User> getByName(String name);
+
+	User findByUserEmail(String email);
 	
 
 }

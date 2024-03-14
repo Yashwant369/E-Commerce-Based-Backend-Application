@@ -1,7 +1,0 @@
-package com.yashwant.product_service.controller;
-
-@RestController
-@RequestMapping("")
-public class ProductController {
-
-}

@@ -1,0 +1,19 @@
+package com.yashwant.product_service.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.yashwant.product_service.entity.Product;
+
+public interface ProductRepo extends JpaRepository<Product,String>
+{
+
+	Product findByProductTitle(String name);
+
+	@Query()
+	List<Product> getByName(String name);
+	
+	
+
+}

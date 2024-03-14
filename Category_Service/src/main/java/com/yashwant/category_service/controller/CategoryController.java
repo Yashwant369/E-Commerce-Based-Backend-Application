@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.yashwant.category_service.dtos.CategoryDto;
 import com.yashwant.category_service.service.impl.CategoryServiceImpl;
 import com.yashwant.category_service.util.ApiResponse;
+import com.yashwant.category_service.util.CategoryResponse;
 
 @RestController
 @RequestMapping("/category")
@@ -58,10 +59,10 @@ public class CategoryController
 		return new ResponseEntity<>(category, HttpStatus.OK);
 	}
 	@GetMapping("/getByName/{name}")
-	public ResponseEntity<CategoryDto>getByName(@PathVariable String name)
+	public ResponseEntity<CategoryResponse> getByName(@PathVariable String name)
 	{
-		CategoryDto category = categoryService.getByName(name);
-		return new ResponseEntity<>(category,HttpStatus.OK);
+		CategoryResponse response = categoryService.getByCategoryName(name);
+		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 	
 

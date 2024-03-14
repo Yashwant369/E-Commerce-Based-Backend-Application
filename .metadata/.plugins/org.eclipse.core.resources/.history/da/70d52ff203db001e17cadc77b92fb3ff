@@ -1,8 +1,0 @@
-package com.yashwant.user_service.service.impl;
-
-
-@Service
-public class UserServiceImpl 
-{
-
-}

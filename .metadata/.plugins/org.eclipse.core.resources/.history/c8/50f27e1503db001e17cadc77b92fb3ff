@@ -1,8 +1,0 @@
-package com.yashwant.user_service.controller;
-
-
-@RestController
-
-public class UserController {
-
-}

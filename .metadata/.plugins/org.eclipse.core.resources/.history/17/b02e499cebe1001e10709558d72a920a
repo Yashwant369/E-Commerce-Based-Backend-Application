@@ -1,0 +1,76 @@
+package com.yashwant.product_service.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.yashwant.product_service.dtos.CategoryDto;
+import com.yashwant.product_service.dtos.ProductDto;
+import com.yashwant.product_service.external.CategoryService;
+import com.yashwant.product_service.service.impl.ProductServiceImpl;
+import com.yashwant.product_service.util.ApiResponse;
+
+@RestController
+@RequestMapping("/product")
+public class ProductController 
+{
+	@Autowired
+	private ProductServiceImpl productService;
+	
+	@Autowired
+	private CategoryService categoryService;
+	
+	@PostMapping("/addProduct")
+	public ResponseEntity<ProductDto>saveProduct(@RequestBody ProductDto productDto)
+	{
+		ProductDto product = productService.addProduct(productDto);
+		return new ResponseEntity<>(product,HttpStatus.OK);
+	}
+	@PutMapping("/updateProduct/{productId}")
+	public ResponseEntity<ProductDto>updateProduct(@PathVariable String productId, @RequestBody ProductDto productDto)
+	{
+		ProductDto product = productService.updateProduct(productId, productDto);
+		return new ResponseEntity<>(product,HttpStatus.OK);
+	}
+	@DeleteMapping("/deleteProduct/{productId}")
+	public ResponseEntity<ApiResponse>deleteProduct(@PathVariable String productId)
+	{
+		ApiResponse response = productService.deleteProduct(productId);
+		return new ResponseEntity<>(response,HttpStatus.OK);
+	}
+	@GetMapping("/getAllProduct")
+	public ResponseEntity<List<ProductDto>>getAllProduct()
+	{
+		List<ProductDto>list = productService.getAllProduct();
+		return new ResponseEntity<>(list,HttpStatus.OK);
+	}
+	@GetMapping("/getById/{productId}")
+	public ResponseEntity<ProductDto>getByProductId(@PathVariable String productId)
+	{
+		ProductDto product = productService.getProduct(productId);
+		return new ResponseEntity<>(product,HttpStatus.OK);
+	}
+	
+	@GetMapping("/")
+	public CategoryDto addCategory()
+	{
+		CategoryDto category = new CategoryDto();
+		category.setCategoryTitle("product category");
+		category.setCategoryDescription("product service call");
+		
+		return categoryService.saveCategory(category);
+	}
+	
+	@DeleteMapping()
+}

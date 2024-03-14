@@ -85,7 +85,7 @@ public class UserServiceImpl implements UserService
 	public UserDto getByEmail(String email) {
 		// TODO Auto-generated method stub
 		
-		User user = userRepo.findByEmail(email);	
+		User user = userRepo.findByUserEmail(email);	
 		return mapper.map(user, UserDto.class);
 	}
 

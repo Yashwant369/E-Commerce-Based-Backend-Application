@@ -1,0 +1,19 @@
+package com.yashwant.product_service.external;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.yashwant.product_service.entity.CategoryDto;
+
+@FeignClient(name = "CATEGORY-SERVICE")
+public interface CategoryService {
+	
+	
+	@GetMapping("category/getAllCategory")
+	public List<CategoryDto>getAllCategory();
+	
+	@GetMapping("")
+
+}
