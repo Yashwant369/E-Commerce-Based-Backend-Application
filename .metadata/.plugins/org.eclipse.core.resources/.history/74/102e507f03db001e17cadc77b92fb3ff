@@ -1,7 +1,0 @@
-package com.yashwant.user_service.repository;
-
-
-public interface UserRepo extends JpaRepository<User,String>
-{
-
-}

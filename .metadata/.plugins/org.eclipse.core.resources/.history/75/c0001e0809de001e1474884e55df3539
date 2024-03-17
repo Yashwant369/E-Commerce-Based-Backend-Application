@@ -1,6 +1,0 @@
-package com.yashwant.user_service.configurations;
-
-@Configuration
-public class MyConfiguration {
-
-}

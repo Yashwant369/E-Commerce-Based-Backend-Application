@@ -1,6 +1,0 @@
-package com.yashwant.category_service.external;
-
-@FeignClient(name = "")
-public interface Product {
-
-}

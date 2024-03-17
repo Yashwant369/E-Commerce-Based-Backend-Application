@@ -1,6 +1,0 @@
-package com.yashwant.user_service.entity;
-
-@Data
-public class Cart {
-
-}

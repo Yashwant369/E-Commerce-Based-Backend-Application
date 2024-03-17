@@ -1,7 +1,0 @@
-package com.yashwant.product_service.entity;
-
-@entity
-@Data
-public class Product {
-
-}
