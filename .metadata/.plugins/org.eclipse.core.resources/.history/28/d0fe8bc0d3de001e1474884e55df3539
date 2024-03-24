@@ -1,6 +1,0 @@
-package com.yashwant.product_service.util;
-
-@data
-public class ApiResponse {
-
-}

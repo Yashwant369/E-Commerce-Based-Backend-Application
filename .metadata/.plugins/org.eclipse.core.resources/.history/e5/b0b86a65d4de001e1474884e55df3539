@@ -1,6 +1,0 @@
-package com.yashwant.product_service.dtos;
-
-@Data
-public class ProductDto {
-
-}

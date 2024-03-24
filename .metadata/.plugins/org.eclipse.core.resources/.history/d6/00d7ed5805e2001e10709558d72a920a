@@ -1,6 +1,0 @@
-package com.yashwant.category_service.util;
-
-
-public class CategoryResponse {
-
-}

@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+import com.yashwant.category_service.util.ApiResponse;
+
 @Configuration
 public class MyConfiguration 
 {
@@ -19,6 +21,11 @@ public class MyConfiguration
 	public ModelMapper getmapper()
 	{
 		return new ModelMapper();
+	}
+	@Bean
+	public ApiResponse getResponse()
+	{
+		return new ApiResponse();
 	}
 
 }

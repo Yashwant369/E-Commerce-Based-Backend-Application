@@ -1,7 +1,0 @@
-package com.yashwant.product_service.external;
-
-
-@FeignClient(e = "")
-public interface CategoryService {
-
-}

@@ -12,12 +12,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.yashwant.category_service.dtos.CategoryDto;
 import com.yashwant.category_service.service.impl.CategoryServiceImpl;
 import com.yashwant.category_service.util.ApiResponse;
 import com.yashwant.category_service.util.CategoryResponse;
+import com.yashwant.category_service.util.PageResponse;
+
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/category")
@@ -29,13 +34,13 @@ public class CategoryController
 	
 	
 	@PostMapping("/addCategory")
-	public ResponseEntity<CategoryDto>saveCategory(@RequestBody CategoryDto categoryDto)
+	public ResponseEntity<CategoryDto>saveCategory(@Valid @RequestBody CategoryDto categoryDto)
 	{
 		CategoryDto category = categoryService.saveCategory(categoryDto);
 		return new ResponseEntity<>(category, HttpStatus.OK);
 	}	
 	@PutMapping("/updateCategory/{categoryId}")
-	public ResponseEntity<CategoryDto>updateCategory(@RequestBody CategoryDto categoryDto, @PathVariable String categoryId)
+	public ResponseEntity<CategoryDto>updateCategory(@Valid @RequestBody CategoryDto categoryDto, @PathVariable String categoryId)
 	{
 		CategoryDto category = categoryService.updateCategory(categoryId, categoryDto);
 		return new ResponseEntity<>(category, HttpStatus.OK);
@@ -47,16 +52,31 @@ public class CategoryController
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	@GetMapping("/getAllCategory")
-	public ResponseEntity<List<CategoryDto>>getAllCategory()
+	@RateLimiter(name = "categoryRateLimiter")
+	public ResponseEntity<PageResponse<CategoryDto>>getAllCategory(
+			@RequestParam(value = "pageNumber", defaultValue = "0", required = false)int pageNumber,
+			@RequestParam(value = "pageSize", defaultValue = "5", required = false)int pageSize,
+			@RequestParam(value = "sortBy",defaultValue = "categoryTitle",required = false)String sortBy,
+			@RequestParam(value = "sortDir",defaultValue = "asc", required = false)String sortDir)
 	{
-		List<CategoryDto>list = categoryService.getAllCategory();
-		return new ResponseEntity<>(list, HttpStatus.OK);
+		
+		PageResponse<CategoryDto>response = categoryService.getAllCategory(pageNumber, pageSize, sortBy, sortDir);
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	@GetMapping("/getById/{categoryId}")
+	@RateLimiter(name = "categoryRateLimiter", fallbackMethod = "categoryFallBack")
 	public ResponseEntity<CategoryDto>getCategory(@PathVariable String categoryId)
 	{
 		CategoryDto category = categoryService.getCategory(categoryId);
 		return new ResponseEntity<>(category, HttpStatus.OK);
+	}
+	public ResponseEntity<CategoryDto>categoryFallBack(String categoryId, Exception ex)
+	{
+		CategoryDto category = new CategoryDto();
+		category.setCategoryDescription("Dummy description");
+		category.setCategoryId("Dummy id");
+		category.setCategoryTitle("Dummy title");
+		return new ResponseEntity<>(category,HttpStatus.OK);
 	}
 	@GetMapping("/getByName/{name}")
 	public ResponseEntity<CategoryResponse> getByName(@PathVariable String name)
