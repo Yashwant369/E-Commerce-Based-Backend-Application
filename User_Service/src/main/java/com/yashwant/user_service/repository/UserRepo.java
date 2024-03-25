@@ -1,7 +1,7 @@
 package com.yashwant.user_service.repository;
 
-import java.util.List;
-
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -13,7 +13,7 @@ public interface UserRepo extends JpaRepository<User,String>
 	
     
 	@Query(value = "select * from user where user_name like :name%", nativeQuery = true)
-	List<User> getByName(String name);
+	Page<User> getByName(String name,Pageable pageable);
 
 	User findByUserEmail(String email);
 	

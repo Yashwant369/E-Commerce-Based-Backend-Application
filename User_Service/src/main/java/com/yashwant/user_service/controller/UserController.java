@@ -12,11 +12,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.yashwant.user_service.dtos.UserDto;
 import com.yashwant.user_service.service.impl.UserServiceImpl;
 import com.yashwant.user_service.util.ApiResponse;
+import com.yashwant.user_service.util.PageResponse;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/user")
@@ -26,7 +30,7 @@ public class UserController
 	private UserServiceImpl userService;
 	
 	@PostMapping("/saveUser")
-	public ResponseEntity<UserDto>saveUser(@RequestBody UserDto userDto)
+	public ResponseEntity<UserDto>saveUser(@Valid @RequestBody UserDto userDto)
 	{
 		UserDto user = userService.addUser(userDto);
 		return new ResponseEntity<>(user,HttpStatus.OK);
@@ -41,9 +45,12 @@ public class UserController
 				
 	}
 	@GetMapping("/getAllUser")
-	public ResponseEntity<List<UserDto>>getAllUser()
+	public ResponseEntity<PageResponse<UserDto>>getAllUser(@RequestParam(name = "PageNumber",defaultValue = "0", required = false)int pageNumber,
+			@RequestParam(name = "PageSize",defaultValue = "5",required = false)int pageSize,
+			@RequestParam(name = "SortBy", defaultValue = "userName", required = false)String sortBy,
+			@RequestParam(name = "SortDir", defaultValue = "asc", required = false)String sortDir)
 	{
-		List<UserDto>list = userService.getAllUser();
+		PageResponse<UserDto>list = userService.getAllUser(pageNumber,pageSize,sortBy,sortDir);
 		return new ResponseEntity<>(list,HttpStatus.OK);
 	}
 	
@@ -55,9 +62,13 @@ public class UserController
 	}
 	
 	@GetMapping("/getByName/{name}")
-	public ResponseEntity<List<UserDto>>getUserByName(@PathVariable String name)
+	public ResponseEntity<PageResponse<UserDto>>getUserByName(@PathVariable String name,
+			@RequestParam(name = "PageNumber",defaultValue = "0", required = false)int pageNumber,
+			@RequestParam(name = "PageSize",defaultValue = "5",required = false)int pageSize,
+			@RequestParam(name = "SortBy", defaultValue = "userName", required = false)String sortBy,
+			@RequestParam(name = "SortDir", defaultValue = "asc", required = false)String sortDir)
 	{
-		List<UserDto>list = userService.getbyPrefixName(name);
+		PageResponse<UserDto>list = userService.getbyPrefixName(name,pageNumber, pageSize, sortBy, sortDir);
 		return new ResponseEntity<>(list,HttpStatus.OK);
 	}
 	
@@ -68,7 +79,7 @@ public class UserController
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	@PutMapping("/updateUser/{userId}")
-	public ResponseEntity<UserDto>updateUser(@PathVariable String userId,@RequestBody UserDto userDto)
+	public ResponseEntity<UserDto>updateUser(@PathVariable String userId,@Valid @RequestBody UserDto userDto)
 	{
 		UserDto user = userService.updateUser(userId, userDto);
 		return new ResponseEntity<>(user,HttpStatus.OK);
