@@ -4,12 +4,13 @@ import java.util.List;
 
 import com.yashwant.product_service.dtos.ProductDto;
 import com.yashwant.product_service.util.ApiResponse;
+import com.yashwant.product_service.util.PageResponse;
 
 public interface ProductService {
 	
 	public ProductDto addProduct(ProductDto productDto);
 	public ProductDto getProduct(String productId);
-	public List<ProductDto>getAllProduct();
+	public PageResponse<ProductDto>getAllProduct(int pageNumber,int pageSize, String sortBy, String sortDir);
 	public ProductDto updateProduct(String productId, ProductDto productDto);
 	public ApiResponse deleteProduct(String productId);
 	public ProductDto getByName(String name);

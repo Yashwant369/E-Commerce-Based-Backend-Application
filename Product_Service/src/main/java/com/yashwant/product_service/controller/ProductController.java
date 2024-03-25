@@ -20,6 +20,9 @@ import com.yashwant.product_service.dtos.ProductDto;
 import com.yashwant.product_service.external.CategoryService;
 import com.yashwant.product_service.service.impl.ProductServiceImpl;
 import com.yashwant.product_service.util.ApiResponse;
+import com.yashwant.product_service.util.PageResponse;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/product")
@@ -28,17 +31,16 @@ public class ProductController
 	@Autowired
 	private ProductServiceImpl productService;
 	
-	@Autowired
-	private CategoryService categoryService;
+	
 	
 	@PostMapping("/addProduct")
-	public ResponseEntity<ProductDto>saveProduct(@RequestBody ProductDto productDto)
+	public ResponseEntity<ProductDto>saveProduct(@Valid @RequestBody ProductDto productDto)
 	{
 		ProductDto product = productService.addProduct(productDto);
 		return new ResponseEntity<>(product,HttpStatus.OK);
 	}
 	@PutMapping("/updateProduct/{productId}")
-	public ResponseEntity<ProductDto>updateProduct(@PathVariable String productId, @RequestBody ProductDto productDto)
+	public ResponseEntity<ProductDto>updateProduct(@PathVariable String productId, @Valid @RequestBody ProductDto productDto)
 	{
 		ProductDto product = productService.updateProduct(productId, productDto);
 		return new ResponseEntity<>(product,HttpStatus.OK);
@@ -50,9 +52,12 @@ public class ProductController
 		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 	@GetMapping("/getAllProduct")
-	public ResponseEntity<List<ProductDto>>getAllProduct()
+	public ResponseEntity<PageResponse<ProductDto>>getAllProduct(@RequestParam(name = "PageNumber",defaultValue = "0",required = false)int pageNumber,
+			@RequestParam(name = "PageSize",defaultValue = "5",required = false)int pageSize,
+			@RequestParam(name = "SortBy", defaultValue = "productTitle", required = false)String sortBy,
+			@RequestParam(name = "SortDir",defaultValue = "asc", required = false)String sortDir)
 	{
-		List<ProductDto>list = productService.getAllProduct();
+		PageResponse<ProductDto>list = productService.getAllProduct(pageNumber,pageSize,sortBy,sortDir);
 		return new ResponseEntity<>(list,HttpStatus.OK);
 	}
 	@GetMapping("/getById/{productId}")
@@ -60,16 +65,6 @@ public class ProductController
 	{
 		ProductDto product = productService.getProduct(productId);
 		return new ResponseEntity<>(product,HttpStatus.OK);
-	}
-	
-	@GetMapping("/")
-	public CategoryDto addCategory()
-	{
-		CategoryDto category = new CategoryDto();
-		category.setCategoryTitle("product category");
-		category.setCategoryDescription("product service call");
-		
-		return categoryService.saveCategory(category);
 	}
 	
 	@DeleteMapping("/deleteProductByCategory/{categoryId}")

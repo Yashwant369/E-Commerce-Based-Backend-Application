@@ -108,7 +108,6 @@ INDEX VERSION 1.134+D:\Capstone Project\E-Commerce Based Backend Appliation\.met
 324983167.index
 3179593944.index
 710590166.index
-601217403.index
 4005423765.index
 1649252552.index
 1803609789.index
@@ -143,7 +142,6 @@ INDEX VERSION 1.134+D:\Capstone Project\E-Commerce Based Backend Appliation\.met
 4119647643.index
 1350247097.index
 2174643330.index
-3102874830.index
 3378093631.index
 1718759759.index
 77379197.index
@@ -206,7 +204,6 @@ INDEX VERSION 1.134+D:\Capstone Project\E-Commerce Based Backend Appliation\.met
 409480710.index
 3318582518.index
 3393542691.index
-1710308300.index
 3127252613.index
 90524028.index
 1490716659.index

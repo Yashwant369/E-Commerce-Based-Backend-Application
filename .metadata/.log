@@ -14590,3 +14590,1262 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:18:16.089
 !MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:49:50.654
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:49:59.287
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:50:05.930
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:50:10.271
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:50:21.216
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:50:26.973
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:50:56.996
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:51:15.626
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:51:24.132
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:51:45.699
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:51:53.031
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:51:59.887
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:52:03.267
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:52:22.273
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:52:29.259
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:52:34.957
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:52:41.122
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:52:52.786
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:00.166
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:06.574
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:11.354
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:15.768
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:26.617
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:36.435
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:56.232
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:53:59.366
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:54:15.095
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:54:19.359
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:54:28.661
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:54:35.238
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:54:39.728
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:54:45.910
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-24 17:55:00.776
+!MESSAGE Unable to compute end of document
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1122)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:872)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toPosition(LSPEclipseUtils.java:178)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:44)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:55:09.776
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:55:22.843
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:55:35.528
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:13.132
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:16.349
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:21.501
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:24.737
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:36.719
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:41.944
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:46.311
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 17:57:52.983
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:01:47.369
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:01:50.617
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:07.688
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:10.969
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:22.053
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:28.486
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:31.787
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:38.753
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:47.185
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:02:54.148
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:00.136
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:06.079
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:11.651
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:21.477
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:24.698
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:29.270
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:34.520
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:38.804
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:43.997
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:49.450
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:03:57.872
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:04:01.200
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:04:14.320
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:04:25.546
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:04:36.786
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:04:56.212
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:05:06.268
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:05:12.104
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:05:17.284
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:05:50.997
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:05:54.110
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:06:01.760
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:06:04.944
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:06:10.101
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:06:17.283
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:06:20.726
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:09:16.301
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:09:21.649
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:09:25.617
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:09:28.017
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:09:42.813
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:09:53.447
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:09:56.716
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:10:04.092
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:10:10.387
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:10:19.934
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:10:25.258
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:10:30.379
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:10:52.183
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:11:06.341
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:11:22.252
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:11:50.962
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:11:54.350
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:00.203
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:04.515
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:08.496
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:13.846
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:26.237
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:31.947
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:35.347
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:39.822
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:45.425
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:53.185
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:12:56.495
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:13:01.178
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:13:04.672
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:13:21.887
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:13:27.783
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:13:33.498
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:13:51.923
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:13:57.186
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:14:00.725
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:14:06.773
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:14:12.548
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:14:15.947
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:14:19.119
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:14:27.882
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:14:35.080
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:16:05.525
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:16:11.302
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:16:21.378
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:16:32.037
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:16:35.397
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:16:38.659
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:16:42.059
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:03.566
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:11.212
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:35.434
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:40.143
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:44.818
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:50.295
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:53.694
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:17:58.062
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:18:29.567
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:18:46.829
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:18:53.444
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:19:04.736
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:19:10.873
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:20:55.351
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:00.094
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:04.250
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:08.430
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:13.012
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:15.402
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:17.600
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:21.708
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:24.839
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:21:28.023
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:24:27.373
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:24:32.976
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:24:36.128
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:24:52.276
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:24:57.290
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:25:07.422
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-24 18:26:05.226
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-24 18:27:04.476
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:29:19.043
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:32:06.898
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:32:23.171
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:32:27.525
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:32:33.432
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:32:37.737
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:32:45.555
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 18:32:56.359
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-24 18:32:56.889
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:10:15.077
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:10:28.756
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:10:32.994
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:10:37.131
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:10:44.745
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:10:53.734
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:10:59.297
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:11:07.239
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-03-24 19:11:07.906
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.core.AbstractClassFile.getClassFileContent(AbstractClassFile.java:237)
+	at org.eclipse.jdt.internal.core.ClassFile.getJarBinaryTypeInfo(ClassFile.java:240)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:201)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:92)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:113)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:288)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.createAnswer(SearchableEnvironment.java:247)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.find(SearchableEnvironment.java:198)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findType(SearchableEnvironment.java:527)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.lambda$0(LookupEnvironment.java:240)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForTypeFromModules(LookupEnvironment.java:384)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:239)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:116)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2372)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:857)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.isInherited(UnresolvedElementsSubProcessor.java:944)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.addSimilarTypeProposals(UnresolvedElementsSubProcessor.java:912)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:683)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:424)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:361)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:11:14.541
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:12:38.318
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:12:47.366
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:12:51.514
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:13:29.628
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:13:32.843
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:13:37.911
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:14:55.972
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:15:07.293
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:15:18.339
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:15:23.119
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:15:27.464
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:15:34.058
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:15:50.227
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:16:02.007
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:16:09.664
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:16:16.316
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:17:42.389
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:21:10.996
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-24 19:21:11.075
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:21:14.292
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:21:54.222
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:21:57.508
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:22:02.790
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:22:50.128
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:22:53.396
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:22:59.244
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:23:03.723
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:24:09.158
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:24:13.372
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:24:18.116
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-24 19:24:18.647
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:24:22.632
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:25:34.547
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:25:42.111
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:25:48.929
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:25:51.482
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:26:00.312
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:26:07.512
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-24 19:26:55.093
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:58:57.559
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:02.824
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:07.578
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:14.591
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:20.863
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:27.167
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-25 06:59:28.037
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:31.452
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:34.711
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:55.537
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 06:59:58.850
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:00:06.275
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:00:20.788
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:00:29.539
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:00:34.902
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:00:42.596
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:00:48.204
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:00:57.351
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:02:33.049
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:02:37.959
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:02:43.146
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:02:49.321
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:02:59.611
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:03:23.420
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:03:28.422
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:03:40.023
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:03:51.141
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:03:56.273
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:03:59.485
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:06.072
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:10.613
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:17.520
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:22.857
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:30.450
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:36.158
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:41.518
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:46.833
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:54.108
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:04:59.836
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:07.949
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:15.259
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:19.446
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:21.642
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:33.347
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:38.024
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:41.392
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:44.937
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:05:55.758
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:06:12.928
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:06:16.105
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:07:15.702
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:07:19.317
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:07:24.658
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:07:27.810
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:07:55.651
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:08:22.201
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:08:26.295
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:08:38.267
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:09:06.665
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:09:11.859
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:09:17.048
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:09:33.613
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:09:55.840
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:09:58.965
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:10:03.184
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:10:18.237
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-25 07:10:18.379
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-03-25 07:11:06.681
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type org.springframework.hateoas.RepresentationModel cannot be resolved. It is indirectly referenced from required type org.springframework.data.domain.jaxb.SpringDataJaxb.PageDto
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:162)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:229)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2682)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5170)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2372)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:857)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.isInherited(UnresolvedElementsSubProcessor.java:944)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.addSimilarTypeProposals(UnresolvedElementsSubProcessor.java:912)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:683)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:424)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:361)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-03-25 07:12:02.509
+!MESSAGE Could not retrieve superclass
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(347) The type org.springframework.hateoas.RepresentationModel cannot be resolved. It is indirectly referenced from required type org.springframework.data.domain.jaxb.SpringDataJaxb.PageDto
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:162)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:229)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2682)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5170)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:125)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:251)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.superclass(BinaryTypeBinding.java:2372)
+	at org.eclipse.jdt.core.dom.TypeBinding.getSuperclass(TypeBinding.java:857)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.isInherited(UnresolvedElementsSubProcessor.java:944)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.addSimilarTypeProposals(UnresolvedElementsSubProcessor.java:912)
+	at org.eclipse.jdt.internal.ui.text.correction.UnresolvedElementsSubProcessor.getTypeProposals(UnresolvedElementsSubProcessor.java:683)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.process(QuickFixProcessor.java:424)
+	at org.eclipse.jdt.internal.ui.text.correction.QuickFixProcessor.getCorrections(QuickFixProcessor.java:361)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionCollector.safeRun(JavaCorrectionProcessor.java:381)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.run(JavaCorrectionProcessor.java:341)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor$SafeCorrectionProcessorAccess.process(JavaCorrectionProcessor.java:336)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectCorrections(JavaCorrectionProcessor.java:465)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getJavaAnnotationFixes(ProblemHover.java:115)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:89)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:12:57.929
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:12:58.844
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:09.707
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:11.969
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-25 07:13:12.595
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:15.847
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:19.716
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:37.804
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:47.793
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:51.914
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:13:54.309
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:14:11.755
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:14:16.513
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:14:30.417
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:14:36.732
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:14:50.192
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:14:53.529
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:16:58.060
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:17:02.790
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:17:15.301
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:17:16.656
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-25 07:18:22.061
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-25 07:19:17.592
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-25 07:19:27.028
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:29:14.007
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:29:21.171
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:29:31.326
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:29:40.927
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:29:48.438
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:29:50.608
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:29:56.418
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:30:07.866
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:30:12.372
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:31:54.382
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:32:08.494
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:33:03.270
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:33:20.972
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:33:26.091
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:33:30.164
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:37:12.693
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:37:19.207
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:37:28.855
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:41:09.222
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:41:13.359
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:41:22.985
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:54:16.392
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-25 07:54:53.433
+!MESSAGE Classpath changed for project: Product_Service
