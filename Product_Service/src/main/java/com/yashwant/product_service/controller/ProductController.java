@@ -1,10 +1,14 @@
 package com.yashwant.product_service.controller;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,12 +18,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.yashwant.product_service.dtos.ProductDto;
+import com.yashwant.product_service.service.impl.FileServiceImpl;
 import com.yashwant.product_service.service.impl.ProductServiceImpl;
 import com.yashwant.product_service.util.ApiResponse;
+import com.yashwant.product_service.util.FileResponse;
 import com.yashwant.product_service.util.PageResponse;
 
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 
 @RestController
@@ -29,7 +37,10 @@ public class ProductController
 	@Autowired
 	private ProductServiceImpl productService;
 	
+	@Autowired
+	private FileServiceImpl fileService;
 	
+	private String path = "Images/Products/";
 	
 	@PostMapping("/addProduct")
 	public ResponseEntity<ProductDto>saveProduct(@Valid @RequestBody ProductDto productDto)
@@ -83,6 +94,31 @@ public class ProductController
 	{
 		List<ProductDto>list = productService.getproductByCategoryName(categoryName);
 		return list;
+	}
+	
+	@PostMapping("/uploadImage/{productId}")
+	public ResponseEntity<FileResponse>uploadImage(@RequestParam("productImage")MultipartFile file,
+			@PathVariable String productId)
+	{
+		FileResponse response = fileService.uploadFile(file, path);
+		ProductDto product = productService.getProduct(productId);
+		product.setProductImage(response.getImageName());
+		ProductDto updatedProduct = productService.updateProduct(productId, product);
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
+	@GetMapping("/getFile/{productId}")
+	public void getFile(@PathVariable String productId, HttpServletResponse response)
+	{
+		
+		ProductDto product = productService.getProduct(productId);
+		InputStream resource = fileService.getFile(path, product.getProductImage());
+		response.setContentType(MediaType.IMAGE_JPEG_VALUE);
+		try {
+			StreamUtils.copy(resource, response.getOutputStream());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	

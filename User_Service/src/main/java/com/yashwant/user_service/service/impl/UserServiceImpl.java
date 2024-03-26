@@ -1,5 +1,10 @@
 package com.yashwant.user_service.service.impl;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -10,17 +15,25 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StreamUtils;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.yashwant.user_service.dtos.UserDto;
 import com.yashwant.user_service.entity.User;
 import com.yashwant.user_service.exception.BadRequestException;
 import com.yashwant.user_service.exception.ResourceNotFoundException;
 import com.yashwant.user_service.repository.UserRepo;
+import com.yashwant.user_service.service.FileService;
 import com.yashwant.user_service.service.UserService;
 import com.yashwant.user_service.util.ApiResponse;
+import com.yashwant.user_service.util.FileResponse;
 import com.yashwant.user_service.util.PageResponse;
+
+import jakarta.servlet.http.HttpServletResponse;
 
 @Service
 public class UserServiceImpl implements UserService 
@@ -30,6 +43,11 @@ public class UserServiceImpl implements UserService
 	
 	@Autowired
 	private ModelMapper mapper;
+	
+	private String path = "Images/Users/";
+	
+	@Autowired
+	private FileService fileService;
 
 	@Override
 	public UserDto addUser(UserDto userDto) {
@@ -109,6 +127,14 @@ public class UserServiceImpl implements UserService
 		// TODO Auto-generated method stub
 		User user = userRepo.findById(userId).orElseThrow(()-> 
 		new ResourceNotFoundException("User not found for given user id : " + userId));
+		String fullPath = path + user.getUserImage();
+		Path path = Paths.get(fullPath);
+		try {
+			Files.delete(path);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			throw new BadRequestException("Error occured while deleting file.");
+		}
 		userRepo.delete(user);
 		ApiResponse response = new ApiResponse();
 		response.setMessage("User Deleted for given User Id : " + userId);
@@ -162,6 +188,41 @@ public class UserServiceImpl implements UserService
 		response.setTotalElements(response.getTotalElements());
 		response.setTotalPages(page.getTotalPages());
 		return response;
+	}
+
+	@Override
+	public FileResponse uploadFile(MultipartFile file, String userId) {
+		// TODO Auto-generated method stub
+		User user = userRepo.findById(userId).orElseThrow(()-> new 
+				ResourceNotFoundException("User not found for give user id: " + userId));
+		String fileName = fileService.uploadFile(file, userId);
+		user.setUserImage(fileName);
+		User user1 = userRepo.save(user);
+		FileResponse response = new FileResponse();
+		response.setImageName(fileName);
+		response.setMessage("File uploaded successfully.");
+		response.setSuccess(true);
+		response.setStatus(HttpStatus.OK);
+		return response;
+	}
+
+	@Override
+	public void getFile(String userId, HttpServletResponse response) {
+		// TODO Auto-generated method stub
+		
+		User user = userRepo.findById(userId).orElseThrow(()-> new 
+				ResourceNotFoundException("User not found for give user id: " + userId));
+		
+		InputStream resource = fileService.getFile(path, user.getUserImage());
+		response.setContentType(MediaType.IMAGE_JPEG_VALUE);
+		try {
+			StreamUtils.copy(resource, response.getOutputStream());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			throw new BadRequestException("Error oocured while fetching file.");
+		}
+		
+		
 	}
 
 	

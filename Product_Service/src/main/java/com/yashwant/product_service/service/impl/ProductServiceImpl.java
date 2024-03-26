@@ -1,5 +1,9 @@
 package com.yashwant.product_service.service.impl;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -38,6 +42,8 @@ public class ProductServiceImpl implements ProductService
 	
 	@Autowired
 	private CategoryService categoryService;
+	
+	private String path = "Images/Products/";
 
 	@Override
 	public ProductDto addProduct(ProductDto productDto) {
@@ -125,6 +131,14 @@ public class ProductServiceImpl implements ProductService
 		// TODO Auto-generated method stub
 		Product product = productRepo.findById(productId).orElseThrow(()-> 
 		new ResourceNotFoundException("Product not found for given product id : " + productId));
+        String fullPath = path + product.getProductImage();
+		Path paths = Paths.get(fullPath);
+		try {
+			Files.delete(paths);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		productRepo.delete(product);
 		ApiResponse response = new ApiResponse();
 		response.setMessage("Product deleted for given id : " + productId);

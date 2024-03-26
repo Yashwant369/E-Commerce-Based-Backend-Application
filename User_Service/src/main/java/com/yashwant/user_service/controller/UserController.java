@@ -1,7 +1,5 @@
 package com.yashwant.user_service.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,12 +12,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.yashwant.user_service.dtos.UserDto;
+import com.yashwant.user_service.service.FileService;
 import com.yashwant.user_service.service.impl.UserServiceImpl;
 import com.yashwant.user_service.util.ApiResponse;
+import com.yashwant.user_service.util.FileResponse;
 import com.yashwant.user_service.util.PageResponse;
 
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 
 @RestController
@@ -28,6 +30,9 @@ public class UserController
 {
 	@Autowired
 	private UserServiceImpl userService;
+	
+	@Autowired
+	private FileService fileService;
 	
 	@PostMapping("/saveUser")
 	public ResponseEntity<UserDto>saveUser(@Valid @RequestBody UserDto userDto)
@@ -84,6 +89,21 @@ public class UserController
 		UserDto user = userService.updateUser(userId, userDto);
 		return new ResponseEntity<>(user,HttpStatus.OK);
 		
+	}
+	
+	@PostMapping("/uploadFile/{userId}")
+	public ResponseEntity<FileResponse>uploadFile(@PathVariable String userId,
+			@RequestParam(name = "UserImage")MultipartFile file)
+	{
+		FileResponse response = userService.uploadFile(file, userId);
+		return new ResponseEntity<>(response,HttpStatus.OK);
+		
+	}
+	
+	@GetMapping("/getFile/{userId}")
+	public void getFile(@PathVariable String userId, HttpServletResponse response)
+	{
+		userService.getFile(userId, response);
 	}
 	
 
