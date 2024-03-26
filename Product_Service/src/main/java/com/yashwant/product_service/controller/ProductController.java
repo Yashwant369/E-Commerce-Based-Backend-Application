@@ -15,9 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.yashwant.product_service.dtos.CategoryDto;
 import com.yashwant.product_service.dtos.ProductDto;
-import com.yashwant.product_service.external.CategoryService;
 import com.yashwant.product_service.service.impl.ProductServiceImpl;
 import com.yashwant.product_service.util.ApiResponse;
 import com.yashwant.product_service.util.PageResponse;

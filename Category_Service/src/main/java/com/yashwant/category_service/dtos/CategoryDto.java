@@ -1,7 +1,6 @@
 package com.yashwant.category_service.dtos;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 

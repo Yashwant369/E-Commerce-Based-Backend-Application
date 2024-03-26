@@ -18,7 +18,7 @@ public class Cart
 	private String cartId;
 	private Date createdDate;
 	private String userId;
-	@OneToMany(mappedBy = "cart", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "cart", cascade = CascadeType.ALL,orphanRemoval = true)
 	private List<CartItem>cartItem = new ArrayList<>();
 	
 

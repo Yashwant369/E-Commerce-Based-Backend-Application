@@ -1,6 +1,7 @@
 package com.yashwant.cart_service.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,7 +24,7 @@ public class CartController
 	private CartServiceImpl cartService;
 	
 	@PostMapping("/addCart/{userId}")
-	public ResponseEntity<CartDto>saveCart(@RequestBody AddItemRequest request, @PathVariable String userId)
+	public ResponseEntity<CartDto>saveCart(@Valid @RequestBody AddItemRequest request, @PathVariable String userId)
 	{
 		CartDto cartDto = cartService.addItem(userId, request);
 		return new ResponseEntity<>(cartDto, HttpStatus.OK);

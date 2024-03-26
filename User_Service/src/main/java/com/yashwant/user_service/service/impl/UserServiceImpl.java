@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import com.yashwant.user_service.dtos.UserDto;
 import com.yashwant.user_service.entity.User;
+import com.yashwant.user_service.exception.BadRequestException;
 import com.yashwant.user_service.exception.ResourceNotFoundException;
 import com.yashwant.user_service.repository.UserRepo;
 import com.yashwant.user_service.service.UserService;
@@ -33,6 +34,11 @@ public class UserServiceImpl implements UserService
 	@Override
 	public UserDto addUser(UserDto userDto) {
 		// TODO Auto-generated method stub
+		User user1 = userRepo.findByUserEmail(userDto.getUserEmail());
+		if(user1 != null)
+		{
+			throw new BadRequestException("User already exist.");
+		}
 		String userId = UUID.randomUUID().toString();
 		userDto.setUserId(userId);
 		User user = mapper.map(userDto, User.class);

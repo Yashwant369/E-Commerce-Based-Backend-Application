@@ -13,6 +13,8 @@ import com.yashwant.cart_service.dtos.ProductDto;
 import com.yashwant.cart_service.dtos.UserDto;
 import com.yashwant.cart_service.entity.Cart;
 import com.yashwant.cart_service.entity.CartItem;
+import com.yashwant.cart_service.exception.BadRequestException;
+import com.yashwant.cart_service.exception.ResourceNotFoundException;
 import com.yashwant.cart_service.external.ProductService;
 import com.yashwant.cart_service.external.UserService;
 import com.yashwant.cart_service.repo.CartItemRepo;
@@ -49,19 +51,19 @@ public class CartServiceImpl implements CartService{
 		int quantity = request.getQuantity();
 		if(quantity < 1)
 		{
-			// throw exception
+			throw new BadRequestException("Product quantity should be greater than one.");
 		}
 		String productId = request.getProductId();
 		
 		ProductDto product = productService.getByProductId(productId);
 		if(product == null)
 		{
-			// throw exception
+			throw new ResourceNotFoundException("Product not found for given product id :" + productId);
 		}
 		UserDto user = userService.getUser(userId);
 		if(user == null)
 		{
-			//throw exception 
+			throw new ResourceNotFoundException("User not found for given user id :" + userId);
 		}
 		Cart cart = null;
 		cart = cartRepo.findByUserId(userId);
@@ -79,8 +81,10 @@ public class CartServiceImpl implements CartService{
 		{
 			if(i.getProductId().equals(productId))
 			{
-				i.setProductQuantity(quantity);
-				i.setTotalPrice(quantity*product.getProductDiscountPrice());
+				int quant = i.getProductQuantity();
+				i.setProductQuantity(quantity + quant);
+				double price = i.getTotalPrice();
+				i.setTotalPrice((quantity*product.getProductDiscountPrice())+price);
 				check = true;
 			}
 		}
@@ -103,6 +107,10 @@ public class CartServiceImpl implements CartService{
 	public void removeItem(String cartItemId) {
 		// TODO Auto-generated method stub
 		CartItem cartItem = cartItemRepo.findByCartItemId(cartItemId);
+		if(cartItem == null)
+		{
+			throw new ResourceNotFoundException("Cart item not found for given cart item id : "+cartItemId);
+		}
 		cartItemRepo.delete(cartItem);
 		
 	}
@@ -112,8 +120,12 @@ public class CartServiceImpl implements CartService{
 		// TODO Auto-generated method stub
 		
 		Cart cart = cartRepo.findByUserId(userId);
+		if(cart == null)
+		{
+			throw new ResourceNotFoundException("Cart not found for given user id : " + userId);
+		}
 		cart.getCartItem().clear();
-		cartRepo.save(cart);
+	    Cart updatedCart = cartRepo.save(cart);
 		
 	}
 
@@ -121,6 +133,10 @@ public class CartServiceImpl implements CartService{
 	public CartDto getCartByUser(String userId) {
 		// TODO Auto-generated method stub
 		Cart cart = cartRepo.findByUserId(userId);
+		if(cart == null)
+		{
+			throw new ResourceNotFoundException("Cart not found for given user id : " + userId);
+		}
 		return mapper.map(cart, CartDto.class);
 	}
 
