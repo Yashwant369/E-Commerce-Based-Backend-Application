@@ -19,8 +19,9 @@ public interface CategoryService {
 	@GetMapping("category/getAllCategory")
 	public List<CategoryDto>getAllCategory();
 	
-	@GetMapping("category/getByName/{name}")
+	@GetMapping("category/getByCategoryName/{name}")
 	public CategoryDto getCategoryByName(@PathVariable String name);
+
 	
 	@PostMapping("category/addCategory")
 	public CategoryDto saveCategory(@RequestBody CategoryDto categoryDto);

@@ -136,6 +136,18 @@ public class CategoryServiceImpl implements CategoryService
 		response.setProducts(list);
 		return response;
 	}
+
+	@Override
+	public CategoryDto getByCategoryName1(String categoryName) {
+		// TODO Auto-generated method stub
+		
+		Category category = categoryRepo.findByCategoryTitle(categoryName);
+		if(category == null)
+		{
+			throw new ResourceNotFoundException("Category information not found for given category name : " + categoryName);
+		}
+		return mapper.map(category, CategoryDto.class);
+	}
 	
 
 }

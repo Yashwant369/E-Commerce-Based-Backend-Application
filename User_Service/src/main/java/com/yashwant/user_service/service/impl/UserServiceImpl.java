@@ -46,8 +46,7 @@ public class UserServiceImpl implements UserService
 	
 	private String path = "Images/Users/";
 	
-	@Autowired
-	private FileService fileService;
+	
 
 	@Override
 	public UserDto addUser(UserDto userDto) {
@@ -190,40 +189,7 @@ public class UserServiceImpl implements UserService
 		return response;
 	}
 
-	@Override
-	public FileResponse uploadFile(MultipartFile file, String userId) {
-		// TODO Auto-generated method stub
-		User user = userRepo.findById(userId).orElseThrow(()-> new 
-				ResourceNotFoundException("User not found for give user id: " + userId));
-		String fileName = fileService.uploadFile(file, userId);
-		user.setUserImage(fileName);
-		User user1 = userRepo.save(user);
-		FileResponse response = new FileResponse();
-		response.setImageName(fileName);
-		response.setMessage("File uploaded successfully.");
-		response.setSuccess(true);
-		response.setStatus(HttpStatus.OK);
-		return response;
-	}
-
-	@Override
-	public void getFile(String userId, HttpServletResponse response) {
-		// TODO Auto-generated method stub
-		
-		User user = userRepo.findById(userId).orElseThrow(()-> new 
-				ResourceNotFoundException("User not found for give user id: " + userId));
-		
-		InputStream resource = fileService.getFile(path, user.getUserImage());
-		response.setContentType(MediaType.IMAGE_JPEG_VALUE);
-		try {
-			StreamUtils.copy(resource, response.getOutputStream());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			throw new BadRequestException("Error oocured while fetching file.");
-		}
-		
-		
-	}
+	
 
 	
 	

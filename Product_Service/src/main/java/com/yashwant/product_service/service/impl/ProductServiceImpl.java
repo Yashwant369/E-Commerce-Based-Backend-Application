@@ -18,12 +18,15 @@ import org.springframework.transaction.annotation.Transactional;
 import com.yashwant.product_service.dtos.CategoryDto;
 import com.yashwant.product_service.dtos.ProductDto;
 import com.yashwant.product_service.entity.Product;
+import com.yashwant.product_service.exception.BadRequestException;
 import com.yashwant.product_service.exception.ResourceNotFoundException;
 import com.yashwant.product_service.external.CategoryService;
 import com.yashwant.product_service.repository.ProductRepo;
 import com.yashwant.product_service.service.ProductService;
 import com.yashwant.product_service.util.ApiResponse;
 import com.yashwant.product_service.util.PageResponse;
+
+import feign.FeignException;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -107,9 +110,14 @@ public class ProductServiceImpl implements ProductService
 
 	@Override
 	public ProductDto updateProduct(String productId, ProductDto productDto) {
+		
+		
 		// TODO Auto-generated method stub
 		Product product = productRepo.findById(productId).orElseThrow(()-> 
 		new ResourceNotFoundException("Product not found for given product id : " + productId));
+		
+		String name = productDto.getProductCategory();
+		CategoryDto category = categoryService.getCategoryByName(name);
 		product.setProductAddedDate(new Date());
 		product.setProductDescription(productDto.getProductDescription());
 		product.setProductDiscountPrice(productDto.getProductDiscountPrice());
@@ -118,8 +126,6 @@ public class ProductServiceImpl implements ProductService
 		product.setProductPrice(productDto.getProductPrice());
 		product.setProductQuantity(productDto.getProductQuantity());
 		product.setProductTitle(productDto.getProductTitle());
-		String name = productDto.getProductCategory();
-		CategoryDto category = categoryService.getCategoryByName(name);
 		product.setCategoryId(category.getCategoryId());
 		product.setProductCategory(productDto.getProductCategory());
 		Product newProduct = productRepo.save(product);

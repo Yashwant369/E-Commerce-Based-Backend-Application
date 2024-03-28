@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.yashwant.product_service.util.ApiResponse;
 
+import feign.FeignException;
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 	
@@ -33,6 +35,16 @@ public class GlobalExceptionHandler {
 	}
 	@ExceptionHandler(BadRequestException.class)
 	public ResponseEntity<ApiResponse>handlerBadRequestException(BadRequestException ex)
+	{
+		response.setMessage(ex.getMessage());
+		response.setStatus(HttpStatus.BAD_REQUEST);
+		response.setSuccess(false);
+		return new ResponseEntity<>(response,HttpStatus.BAD_REQUEST);
+		
+		
+	}
+	@ExceptionHandler(FeignException.class)
+	public ResponseEntity<ApiResponse>handlerFeignException(FeignException ex)
 	{
 		response.setMessage(ex.getMessage());
 		response.setStatus(HttpStatus.BAD_REQUEST);

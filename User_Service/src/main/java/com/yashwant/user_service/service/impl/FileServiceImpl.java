@@ -2,26 +2,27 @@ package com.yashwant.user_service.service.impl;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.UUID;
 
-import org.springframework.stereotype.Service;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.multipart.MultipartFile;
 
-
 import com.yashwant.user_service.exception.BadRequestException;
-import com.yashwant.user_service.exception.ResourceNotFoundException;
 import com.yashwant.user_service.service.FileService;
 import com.yashwant.user_service.util.FileResponse;
+import org.springframework.stereotype.Service;
 
 @Service
-public class FileServiceImpl implements FileService {
+public class FileServiceImpl implements FileService
+{
 
 	@Override
-	public String uploadFile(MultipartFile file, String path) {
+	public FileResponse uploadFile(MultipartFile file, String path) {
 		// TODO Auto-generated method stub
 		String originalName = file.getOriginalFilename();
 		
@@ -32,26 +33,32 @@ public class FileServiceImpl implements FileService {
 		if(extension.equalsIgnoreCase(".png") || extension.equalsIgnoreCase(".jpg") ||
 				extension.equalsIgnoreCase(".jpeg"))
 		{
-			//throw new BadRequestException("File with extension " + extension + " not allowed ");
+			
 			File folder = new File(path);
 			if(!folder.exists())	
 			{
 				folder.mkdirs();
 			}
-			//folder.mkdirs();
+			
 			try {
 				Files.copy(file.getInputStream(), Paths.get(fullPath));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+			FileResponse response = new FileResponse();
+			response.setImageName(fileName);
+			response.setMessage("File uploaded : " + fileName);
+			response.setSuccess(true);
+			response.setStatus(HttpStatus.OK);
 			
-			return fileName;
+			return response;
 		}
 		else  
 		{
 			throw new BadRequestException("File with extension " + extension + " not allowed ");
 		}
+		
 	}
 
 	@Override
@@ -61,14 +68,13 @@ public class FileServiceImpl implements FileService {
 		InputStream inputStream = null;
 		try {
 			inputStream = new FileInputStream(fullPath);
-		} catch (Exception e) {
+		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
-			throw new ResourceNotFoundException("File not found for given file name : " + name);
+			e.printStackTrace();
 		}
 		return inputStream;
-
+		
 	}
-	
 	
 
 }

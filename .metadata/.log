@@ -4052,3 +4052,1678 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:15:58.868
 !MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:18:56.355
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:19:04.783
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:30:49.875
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-26 19:31:08.630
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$10(LanguageServerWrapper.java:446)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:31:08.675
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:31:18.312
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-26 19:31:18.711
+!MESSAGE LanguageServer not initialized within 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:826)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.capabilitiesComply(LanguageServiceAccessor.java:300)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:556)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerProjectExecutor.getServers(LanguageServers.java:316)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:403)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:152)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:129)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:29)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:31:24.538
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:38:01.409
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:38:07.929
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:38:21.180
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-26 19:38:29.880
+!MESSAGE Classpath changed for project: User_Service
+!SESSION 2024-03-27 10:30:52.772 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-03-27 10:30:57.000
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-03-27 10:31:37.197
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-27 10:31:37.197
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 10:31:48.334
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Software\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Capstone Project/E-Commerce Based Backend Appliation/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711515708334
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:48.337
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 10:31:48.353
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 20340
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 10:31:49.163
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-03-27 10:31:55.035
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rishu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.482
+!MESSAGE Boot project ADDED: API-Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.485
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.491
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.491
+!MESSAGE Boot project ADDED: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.492
+!MESSAGE Boot project ADDED: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.493
+!MESSAGE Boot project ADDED: Order_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.494
+!MESSAGE Boot project ADDED: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.496
+!MESSAGE Boot project ADDED: ServiceRegistry
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 10:31:57.497
+!MESSAGE Boot project ADDED: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:14:48.619
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-27 12:16:43.745
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:19:13.297
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 12:19:19.215
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-27 12:22:06.165
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-27 12:24:07.784
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jface 2 0 2024-03-27 12:30:11.773
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-27 12:30:11.773
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:48:07.690
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:48:13.462
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:48:17.994
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:49:05.836
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:49:55.523
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:50:03.649
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:50:09.942
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 19:50:12.599
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:50:48.128
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:50:53.305
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:22.054
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:25.225
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:31.703
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:35.629
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:45.860
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:50.216
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:53.791
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:51:59.984
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 19:52:06.486
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:52:06.999
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:52:13.004
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:52:18.167
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:52:23.271
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:52:33.202
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:52:40.194
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:52:47.665
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:53:29.481
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:53:33.874
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:53:40.228
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:55:55.810
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:56:07.307
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:56:10.703
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 19:56:14.733
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:56:15.165
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:56:21.716
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:56:28.674
+!MESSAGE Classpath changed for project: User_Service
+!SESSION 2024-03-27 19:57:42.547 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-03-27 19:57:45.007
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-03-27 19:58:00.836
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-27 19:58:00.836
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-03-27 19:58:07.675
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rishu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.322
+!MESSAGE Boot project ADDED: API-Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.323
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.420
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.422
+!MESSAGE Boot project ADDED: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.425
+!MESSAGE Boot project ADDED: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.426
+!MESSAGE Boot project ADDED: Order_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.427
+!MESSAGE Boot project ADDED: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.429
+!MESSAGE Boot project ADDED: ServiceRegistry
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.431
+!MESSAGE Boot project ADDED: User_Service
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 19:58:12.744
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Software\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Capstone Project/E-Commerce Based Backend Appliation/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711549692743
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:58:12.745
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-27 19:58:12.781
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 23772
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-27 19:58:12.985
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:59:06.539
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:59:11.704
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:59:32.598
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 19:59:43.615
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:59:45.458
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 19:59:48.660
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:00:20.996
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:01:04.863
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:01:19.269
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:01:27.442
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:01:32.488
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:01:37.741
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:01:51.231
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:01:55.501
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:02.162
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:09.170
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:14.905
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:02:17.579
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:18.079
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:02:22.879
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:23.165
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:27.636
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:32.139
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:36.926
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:44.463
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:50.903
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:02:53.046
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:07.240
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:12.208
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:17.067
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:25.222
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:28.348
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:03:28.539
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:34.595
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:37.758
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:03:45.488
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:04:24.940
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:04:32.133
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:04:35.535
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:04:35.803
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:04:39.801
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:04:47.050
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:05:17.574
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:05:23.254
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:05:33.070
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:05:38.092
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:05:38.561
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:05:41.955
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:05:48.142
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:05:56.779
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:06:07.629
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:06:07.905
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:06:13.569
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:06:23.227
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:06:26.572
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-27 20:10:50.126
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:12:37.329
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:13:17.918
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.jface 2 0 2024-03-27 20:16:01.796
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-27 20:16:01.796
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:23:29.090
+!MESSAGE Could not detect hyperlinks due to timeout after 800 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:68)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:23:42.217
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:23:43.887
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:23:58.524
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 20:23:59.956
+!MESSAGE Could not get hover region due to timeout after 1000 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:24:00.195
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:24:31.150
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:24:42.032
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:24:45.243
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:24:48.484
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:24:51.592
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:25:12.805
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:25:17.574
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:25:21.893
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:25:31.339
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:25:41.877
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:26:09.872
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:26:38.329
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:27:00.706
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:29:53.459
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:30:00.881
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:30:07.236
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:30:17.698
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:32:10.018
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-27 20:34:02.054
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-27 20:43:41.119
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:47:59.653
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:48:25.479
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:49:03.925
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:49:16.301
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:49:20.485
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:52:43.310
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:52:56.280
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:53:20.683
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:53:30.847
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:54:11.318
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:54:21.838
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:56:16.603
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:57:37.640
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 20:58:53.567
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:04:31.669
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:04:58.711
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:05:02.931
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:05:28.163
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:05:32.342
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:05:36.048
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:05:49.526
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:06:02.081
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:06:07.011
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:10:41.269
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:10:44.768
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.ide.eclipse.boot.dash 4 0 2024-03-27 21:11:39.895
+!MESSAGE Failed to connect to Boot app
+!STACK 0
+java.lang.NullPointerException
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:732)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2182)
+	at org.springframework.ide.eclipse.boot.dash.liveprocess.DefaultLiveProcessCommandExecutor.executeCommand(DefaultLiveProcessCommandExecutor.java:60)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:219)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:151)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker$1.gotValue(RunStateTracker.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:12:50.053
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:19:07.394
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:19:07.981
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:19:08.901
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:19:48.711
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:19:56.873
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:20:43.386
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:20:50.517
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 21:20:51.063
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:21:06.812
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:24:42.036
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:24:43.218
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:24:56.891
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:25:00.254
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:25:09.598
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:25:15.458
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:28:42.623
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:38:59.763
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:39:04.691
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:39:22.663
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:39:25.851
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:39:30.137
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:39:35.773
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:39:41.104
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:39:44.898
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:57:52.810
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 21:58:36.041
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:05:14.249
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:09:35.993
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:10:26.437
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:10:29.695
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:11:10.133
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:12:27.256
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:14:01.202
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:14:32.923
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:17:20.589
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:17:23.865
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:18:25.510
+!MESSAGE Classpath changed for project: User_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:31:11.681
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:31:55.223
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:53:11.248
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:53:17.500
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:54:07.163
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:54:09.968
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:54:14.468
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 22:54:14.891
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 22:54:32.691
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:18:54.027
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:19:02.392
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:19:25.619
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:19:33.503
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:19:38.071
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:19:48.244
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:19:58.181
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:20:03.362
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:20:14.028
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:27:52.974
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:32:32.246
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:32:57.690
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:34:42.887
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 23:34:43.043
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:37:08.647
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:37:13.819
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:37:23.839
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:40:30.367
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:40:34.622
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:40:37.775
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:40:48.073
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:40:53.349
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:41:05.804
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:41:16.331
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:41:23.295
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:41:32.794
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:41:54.796
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:42:06.899
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:42:22.441
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:42:37.155
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:42:41.633
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:42:45.878
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:42:50.164
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:42:55.413
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:00.011
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:04.357
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:07.815
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:32.392
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:38.787
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:48.908
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:53.982
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:43:59.959
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:44:50.644
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:44:53.771
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:44:57.205
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:45:03.623
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:45:06.804
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:46:13.891
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:46:20.575
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:58:29.063
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:58:40.626
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:58:48.462
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:58:53.223
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:58:56.579
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-27 23:58:56.595
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:59:03.879
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:59:31.150
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-27 23:59:41.528
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:07.614
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:10.849
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:16.577
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:20.319
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:33.382
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:36.481
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:39.795
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:52.991
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:00:56.609
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:01:48.199
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:03:12.308
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:03:19.321
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:03:25.493
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:03:32.987
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:03:44.109
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:03:48.412
+!MESSAGE Classpath changed for project: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 00:17:04.137
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:51:12.808
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:51:29.887
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:51:39.633
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:51:48.529
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:51:52.984
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:51:59.461
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-28 08:53:26.726
+!MESSAGE Could not get hover region due to timeout after 1000 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-28 08:53:27.408
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:54:16.455
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:54:17.758
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:55:45.520
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:56:16.329
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:56:25.320
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:56:30.622
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:56:36.920
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:56:55.458
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:56:56.037
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 08:56:57.275
+!MESSAGE Classpath changed for project: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:06:03.085
+!MESSAGE Classpath changed for project: Product_Service
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-03-28 09:06:03.384
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2024-03-28 09:24:31.387 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-03-28 09:24:34.289
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-03-28 09:24:56.973
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-28 09:24:56.973
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-03-28 09:25:04.046
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rishu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.535
+!MESSAGE Boot project ADDED: API-Gateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.536
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.646
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.647
+!MESSAGE Boot project ADDED: Cart_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.648
+!MESSAGE Boot project ADDED: Category_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.649
+!MESSAGE Boot project ADDED: Order_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.651
+!MESSAGE Boot project ADDED: Product_Service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.652
+!MESSAGE Boot project ADDED: ServiceRegistry
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.654
+!MESSAGE Boot project ADDED: User_Service
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-28 09:25:09.759
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Software\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Software\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/Capstone Project/E-Commerce Based Backend Appliation/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1711598109758
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-28 09:25:09.760
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-28 09:25:09.813
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8100
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-03-28 09:25:10.347
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)

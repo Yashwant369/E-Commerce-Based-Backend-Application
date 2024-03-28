@@ -27,6 +27,7 @@ import com.yashwant.product_service.util.ApiResponse;
 import com.yashwant.product_service.util.FileResponse;
 import com.yashwant.product_service.util.PageResponse;
 
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 
@@ -61,6 +62,7 @@ public class ProductController
 		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 	@GetMapping("/getAllProduct")
+	@RateLimiter(name = "productRateLimiter",fallbackMethod = "productFallBack")
 	public ResponseEntity<PageResponse<ProductDto>>getAllProduct(@RequestParam(name = "PageNumber",defaultValue = "0",required = false)int pageNumber,
 			@RequestParam(name = "PageSize",defaultValue = "5",required = false)int pageSize,
 			@RequestParam(name = "SortBy", defaultValue = "productTitle", required = false)String sortBy,
@@ -70,6 +72,7 @@ public class ProductController
 		return new ResponseEntity<>(list,HttpStatus.OK);
 	}
 	@GetMapping("/getById/{productId}")
+	//@RateLimiter(name = "productRateLimiter",fallbackMethod = "productFallBack")
 	public ResponseEntity<ProductDto>getByProductId(@PathVariable String productId)
 	{
 		ProductDto product = productService.getProduct(productId);
@@ -97,6 +100,7 @@ public class ProductController
 	}
 	
 	@PostMapping("/uploadImage/{productId}")
+	@RateLimiter(name = "productRateLimiter",fallbackMethod = "productFallBack")
 	public ResponseEntity<FileResponse>uploadImage(@RequestParam("productImage")MultipartFile file,
 			@PathVariable String productId)
 	{
@@ -107,6 +111,7 @@ public class ProductController
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	@GetMapping("/getFile/{productId}")
+	@RateLimiter(name = "productRateLimiter",fallbackMethod = "productFallBack")
 	public void getFile(@PathVariable String productId, HttpServletResponse response)
 	{
 		
@@ -119,6 +124,14 @@ public class ProductController
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	public ResponseEntity<ApiResponse>productFallBack(Exception ex)
+	{
+		ApiResponse response = new ApiResponse();
+		response.setStatus(HttpStatus.BAD_REQUEST);
+		response.setSuccess(false);
+		response.setMessage("RequestNotPermitted");
+		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 	
 	

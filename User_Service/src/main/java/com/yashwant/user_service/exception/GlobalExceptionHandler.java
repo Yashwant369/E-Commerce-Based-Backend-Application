@@ -39,6 +39,7 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
 		
 	}
+
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<Map<String,String>>handlerMethodArgumentNotValid(MethodArgumentNotValidException ex)
 	{

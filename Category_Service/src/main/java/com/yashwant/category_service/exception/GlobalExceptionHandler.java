@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.yashwant.category_service.util.ApiResponse;
 
+import feign.FeignException;
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 	
@@ -24,6 +26,15 @@ public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<ApiResponse>handlerResourceNotFound(ResourceNotFoundException ex)
+	{
+		response.setMessage(ex.getMessage());
+		response.setSuccess(false);
+		response.setStatus(HttpStatus.BAD_REQUEST);
+		return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+		
+	}
+	@ExceptionHandler(FeignException.class)
+	public ResponseEntity<ApiResponse>handlerFeignException(FeignException ex)
 	{
 		response.setMessage(ex.getMessage());
 		response.setSuccess(false);

@@ -15,5 +15,6 @@ public interface CategoryService
 	public CategoryDto updateCategory(String categoryId, CategoryDto categoryDto);
 	public ApiResponse deleteCategory(String categoryId);
 	public CategoryResponse getByCategoryName(String categoryName);
+	public CategoryDto getByCategoryName1(String categoryName);
 
 }

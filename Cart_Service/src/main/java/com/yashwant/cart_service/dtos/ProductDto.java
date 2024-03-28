@@ -17,7 +17,7 @@ public class ProductDto
 	private String productLive;
 	private String productCategory;
 	private String productImage;
-	private String categoryId;
+	
 	
 
 }

@@ -1,7 +1,5 @@
 package com.yashwant.category_service.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -40,19 +38,21 @@ public class CategoryController
 		return new ResponseEntity<>(category, HttpStatus.OK);
 	}	
 	@PutMapping("/updateCategory/{categoryId}")
+	@RateLimiter(name = "categoryRateLimiter",fallbackMethod = "categoryFallBack")
 	public ResponseEntity<CategoryDto>updateCategory(@Valid @RequestBody CategoryDto categoryDto, @PathVariable String categoryId)
 	{
 		CategoryDto category = categoryService.updateCategory(categoryId, categoryDto);
 		return new ResponseEntity<>(category, HttpStatus.OK);
 	}
 	@DeleteMapping("/deleteCategory/{categoryId}")
+	//@RateLimiter(name = "categoryRateLimiter",fallbackMethod = "categoryFallBack")
 	public ResponseEntity<ApiResponse>deleteCategory(@PathVariable String categoryId)
 	{
 		ApiResponse response = categoryService.deleteCategory(categoryId);
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	@GetMapping("/getAllCategory")
-	@RateLimiter(name = "categoryRateLimiter")
+	@RateLimiter(name = "categoryRateLimiter",fallbackMethod = "categoryFallBack")
 	public ResponseEntity<PageResponse<CategoryDto>>getAllCategory(
 			@RequestParam(value = "pageNumber", defaultValue = "0", required = false)int pageNumber,
 			@RequestParam(value = "pageSize", defaultValue = "5", required = false)int pageSize,
@@ -70,20 +70,27 @@ public class CategoryController
 		CategoryDto category = categoryService.getCategory(categoryId);
 		return new ResponseEntity<>(category, HttpStatus.OK);
 	}
-	public ResponseEntity<CategoryDto>categoryFallBack(String categoryId, Exception ex)
-	{
-		CategoryDto category = new CategoryDto();
-		category.setCategoryDescription("Dummy description");
-		category.setCategoryId("Dummy id");
-		category.setCategoryTitle("Dummy title");
-		return new ResponseEntity<>(category,HttpStatus.OK);
-	}
+
 	@GetMapping("/getByName/{name}")
+	@RateLimiter(name = "categoryRateLimiter",fallbackMethod = "categoryFallBack")
 	public ResponseEntity<CategoryResponse> getByName(@PathVariable String name)
 	{
 		CategoryResponse response = categoryService.getByCategoryName(name);
 		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
-	
+	public ResponseEntity<ApiResponse>categoryFallBack(Exception ex)
+	{
+		ApiResponse response = new ApiResponse();
+		response.setStatus(HttpStatus.BAD_REQUEST);
+		response.setSuccess(false);
+		response.setMessage("RequestNotPermitted");
+		return new ResponseEntity<>(response,HttpStatus.OK);
+	}
+	@GetMapping("/getByCategoryName/{name}")
+	public CategoryDto getCategoryByName(@PathVariable String name)
+	{
+		CategoryDto category = categoryService.getByCategoryName1(name);
+		return category;
+	}
 
 }

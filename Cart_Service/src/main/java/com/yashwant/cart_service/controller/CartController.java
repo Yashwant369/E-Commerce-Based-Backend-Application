@@ -16,6 +16,8 @@ import com.yashwant.cart_service.service.impl.CartServiceImpl;
 import com.yashwant.cart_service.util.AddItemRequest;
 import com.yashwant.cart_service.util.ApiResponse;
 
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+
 @RestController
 @RequestMapping("/cart")
 public class CartController 
@@ -53,10 +55,20 @@ public class CartController
 		
 	}
 	@GetMapping("/getCart/{userId}")
+	@RateLimiter(name = "cartRateLimiter",fallbackMethod = "cartFallBack")
 	public ResponseEntity<CartDto>getCart(@PathVariable String userId)
 	{
 		CartDto cart = cartService.getCartByUser(userId);
 		return new ResponseEntity<>(cart, HttpStatus.OK);
+	}
+	
+	public ResponseEntity<ApiResponse>cartFallBack(Exception ex)
+	{
+		ApiResponse response = new ApiResponse();
+		response.setStatus(HttpStatus.BAD_REQUEST);
+		response.setSuccess(false);
+		response.setMessage("RequestNotPermitted");
+		return new ResponseEntity<>(response,HttpStatus.OK);
 	}
 
 }

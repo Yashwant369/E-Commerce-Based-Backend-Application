@@ -9,8 +9,6 @@ import com.yashwant.user_service.entity.User;
 
 public interface UserRepo extends JpaRepository<User,String>
 {
-
-	
     
 	@Query(value = "select * from user where user_name like :name%", nativeQuery = true)
 	Page<User> getByName(String name,Pageable pageable);
